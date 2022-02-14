@@ -12,9 +12,20 @@
     <link rel='stylesheet' href='/build/bundle.css'>
 
     <script defer src='/build/bundle.js'></script>
+
+    <script>
+        let attempts = 6;
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            component.App("World");
+            component.Attempts(attempts);
+        });
+    </script>
+
 </head>
 
 <body>
+    <h1>This is an Exising App</h1>
 </body>
 
 </html>
