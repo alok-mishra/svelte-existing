@@ -1,13 +1,24 @@
 import App from './App.svelte';
+import Attempts from './Attempts.svelte';
 
-const app = {};
-app.App = props => {
-    new App({
-        target: document.body,
-        props: {
-            name: props,
-        },
-    });
+const app = {
+    App: name => {
+        new App({
+            target: document.body,
+            props: {
+                name,
+            },
+        });
+    },
+
+    Attempts: attempts => {
+        new Attempts({
+            target: document.body,
+            props: {
+                attempts,
+            },
+        });
+    },
 };
 
 export default app;
