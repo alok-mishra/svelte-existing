@@ -1,3 +1,4 @@
+import './Tailwind.svelte';
 import App from './App.svelte';
 import Attempts from './Attempts.svelte';
 

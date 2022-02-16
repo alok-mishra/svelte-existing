@@ -2,13 +2,4 @@
     export let attempts: number;
 </script>
 
-<div>{attempts} Attempts!!</div>
-
-<style>
-    div {
-        color: turquoise;
-        font-weight: bold;
-        font-size: 2em;
-        text-align: center;
-    }
-</style>
+<div class="text-teal-400 font-bold text-4xl text-center">{attempts} Attempts!!</div>
